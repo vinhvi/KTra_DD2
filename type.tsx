@@ -5,7 +5,7 @@ export type Todo = {
   image: String;
 };
 export type RootStackParamList = {
-  ListTodo: undefined;
+  Hinh1: undefined;
   AddTodo: undefined;
-  Update: undefined;
+  Hinh2: undefined;
 };

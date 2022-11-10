@@ -16,7 +16,7 @@ export default function TodoList() {
   const [posts, setPosts] = useState([]);
   const navigation = useNavigation();
   const a = () => {
-    navigation.navigate("Update");
+    navigation.navigate("Hinh2");
   };
   return (
     <View style={styles.container}>
