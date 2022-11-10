@@ -6,6 +6,6 @@ export type Todo = {
 };
 export type RootStackParamList = {
   Hinh1: undefined;
-  AddTodo: undefined;
+  Hinh3: undefined;
   Hinh2: undefined;
 };

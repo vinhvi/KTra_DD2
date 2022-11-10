@@ -12,8 +12,7 @@ import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { FontAwesome } from "@expo/vector-icons";
 
-export default function TodoList() {
-  const [posts, setPosts] = useState([]);
+export default function Hinh1() {
   const navigation = useNavigation();
   const a = () => {
     navigation.navigate("Hinh2");

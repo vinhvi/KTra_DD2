@@ -8,11 +8,16 @@ import {
   Image,
   TouchableNativeFeedback,
   Alert,
+  TouchableOpacity,
 } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { SimpleLineIcons } from "@expo/vector-icons";
 
-export default function UpdateTodo() {
+export default function Hinh2() {
+  const navigation = useNavigation();
+  const a = () => {
+    navigation.navigate("Hinh3");
+  };
   return (
     <View style={styles.container}>
       <Image
@@ -59,12 +64,16 @@ export default function UpdateTodo() {
             marginTop: 10,
           }}
         >
-          <View style={{ flexDirection: "row", marginTop: 5 }}>
-            <SimpleLineIcons name="handbag" size={24} color="white" />
-            <Text style={{ fontWeight: "bold", fontSize: 20, color: "white" }}>
-              Add To Cart
-            </Text>
-          </View>
+          <TouchableOpacity onPress={a}>
+            <View style={{ flexDirection: "row", marginTop: 5 }}>
+              <SimpleLineIcons name="handbag" size={24} color="white" />
+              <Text
+                style={{ fontWeight: "bold", fontSize: 20, color: "white" }}
+              >
+                Add To Cart
+              </Text>
+            </View>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
